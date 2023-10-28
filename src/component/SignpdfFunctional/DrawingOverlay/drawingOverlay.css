@@ -1,0 +1,43 @@
+
+.delete-button {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.drawing-overlay {
+  position: relative;
+}
+.drawing-actions {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background-color: rgb(220, 28, 28);
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+@media only screen and (max-width: 480px) {
+  .delete-button {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .delete-button {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .delete-button {
+    width: 20px;
+    height: 20px;
+  }
+}
